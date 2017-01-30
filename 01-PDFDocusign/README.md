@@ -4,7 +4,7 @@
 
 The purpose of this sample is to show how to generate a PDF document with [iText 7](http://itextpdf.com/) and send it through [DocuSign](http://docusign.com).
 
-[Read more on my blog](http://antoniogoncalves.org/2013/07/03/monster-component-in-java-ee-7/)
+[Read more on my blog](https://antoniogoncalves.org/2017/01/30/automating-administrative-tasks-with-itext-and-docusign/)
 
 ## Execute the sample
 
