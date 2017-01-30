@@ -49,9 +49,9 @@ public class PdfSender {
 
         // Set tabs
         Tabs tabs = new Tabs();
-        tabs.setSignHereTabs(getTabSignHere());
-        tabs.setDateSignedTabs(getTabDateSigned());
         tabs.setFullNameTabs(getTabFullName());
+        tabs.setDateSignedTabs(getTabDateSigned());
+        tabs.setSignHereTabs(getTabSignHere());
         signer.setTabs(tabs);
 
         // add recipients (in this case a single signer) to the envelope

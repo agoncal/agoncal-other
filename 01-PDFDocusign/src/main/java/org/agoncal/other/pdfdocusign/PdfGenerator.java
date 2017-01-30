@@ -79,7 +79,7 @@ public class PdfGenerator {
         document.add(new Paragraph("Important Contract").setMultipliedLeading(2).setFontSize(FONT_TITLE).setBold().setTextAlignment(TextAlignment.CENTER));
 
         // Paragraph
-        document.add(new Paragraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula mauris, eu hendrerit sem ultrices et. Curabitur sit amet urna lorem. Vivamus rhoncus nisi et nulla efficitur, at ullamcorper risus ultricies. Nulla eget eros id elit auctor tincidunt.").setMarginTop(15));
+        document.add(new Paragraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula mauris, eu hendrerit sem ultrices et. Curabitur sit amet urna lorem. Vivamus rhoncus nisi et nulla efficitur, at ullamcorper risus ultricies. Nulla eget eros id elit auctor tincidunt:").setMarginTop(15));
 
         // Create a List
         List list = new List().setSymbolIndent(12).setListSymbol("\u2022");
