@@ -112,11 +112,11 @@ public class PdfGenerator {
     private static Table drawSignature() {
         Table table = new Table(2).setWidthPercent(60).setHorizontalAlignment(HorizontalAlignment.CENTER).setBackgroundColor(Color.LIGHT_GRAY);
         table.addCell(new Cell().add(new Paragraph("Name").setMultipliedLeading(3).setBold()).setBorder(Border.NO_BORDER));
-        table.addCell(new Cell().add(new Paragraph("/nameAnchor1/")).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
+        table.addCell(new Cell().add(new Paragraph("/nameAnchor1/").setMultipliedLeading(3)).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
         table.addCell(new Cell().add(new Paragraph("Date").setMultipliedLeading(2).setBold()).setBorder(Border.NO_BORDER));
-        table.addCell(new Cell().add(new Paragraph("/dateAnchor1/")).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
+        table.addCell(new Cell().add(new Paragraph("/dateAnchor1/").setMultipliedLeading(2)).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
         table.addCell(new Cell().add(new Paragraph("Signature").setMultipliedLeading(5).setBold()).setBorder(Border.NO_BORDER));
-        table.addCell(new Cell().add(new Paragraph("/signAnchor1/")).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
+        table.addCell(new Cell().add(new Paragraph("/signAnchor1/").setMultipliedLeading(5)).setBorder(Border.NO_BORDER).setFontColor(Color.LIGHT_GRAY));
         return table;
     }
 
