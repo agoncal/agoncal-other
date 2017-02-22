@@ -69,10 +69,8 @@ public class PdfSender {
     private static java.util.List<FullName> getTabFullName() {
         FullName tab = new FullName();
         tab.setDocumentId("1");
-        tab.setPageNumber("1");
         tab.setRecipientId("1");
-        tab.setXPosition("210");
-        tab.setYPosition("636");
+        tab.setAnchorString("/nameAnchor1/");
         java.util.List<FullName> tabs = new ArrayList<>();
         tabs.add(tab);
         return tabs;
@@ -81,10 +79,8 @@ public class PdfSender {
     private static java.util.List<DateSigned> getTabDateSigned() {
         DateSigned tab = new DateSigned();
         tab.setDocumentId("1");
-        tab.setPageNumber("1");
         tab.setRecipientId("1");
-        tab.setXPosition("210");
-        tab.setYPosition("674");
+        tab.setAnchorString("/dateAnchor1/");
         java.util.List<DateSigned> tabs = new ArrayList<>();
         tabs.add(tab);
         return tabs;
@@ -93,10 +89,8 @@ public class PdfSender {
     private static java.util.List<SignHere> getTabSignHere() {
         SignHere tab = new SignHere();
         tab.setDocumentId("1");
-        tab.setPageNumber("1");
         tab.setRecipientId("1");
-        tab.setXPosition("210");
-        tab.setYPosition("689");
+        tab.setAnchorString("/signAnchor1/");
         java.util.List<SignHere> tabs = new ArrayList<>();
         tabs.add(tab);
         return tabs;

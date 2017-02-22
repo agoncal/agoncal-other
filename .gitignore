@@ -2,7 +2,8 @@
 target/
 
 # IDEs and editors
-/.idea
+.idea/
+/.idea/
 *.iml
 
 # misc
