@@ -12,6 +12,7 @@
 
     <modules>
         <module>01-PDFDocusign</module>
+        <module>02-AsciidocExtensions</module>
     </modules>
 
 </project>

@@ -1,0 +1,37 @@
+:allow-uri-read:
+
+== Here I am using the emoji-inline-macro extension
+
+Faster than a emoji:turtle[1x]!
+
+This is an example of how you can emoji:heart[lg] Asciidoctor and Twitter Emoji.
+
+== Here I am using the uri-include-processor extension
+
+[source]
+----
+include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[]
+----
+
+== Here I am using the uri-include-processor extension with tags
+
+[source]
+----
+include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[tag=snippets]
+----
+
+
+== Here I am using include
+
+[source]
+----
+include::/Users/agoncal/Documents/Code/Agoncal/agoncal-book-javaee7/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[]
+----
+
+
+== Here I am using include with tags
+
+[source]
+----
+include::/Users/agoncal/Documents/Code/Agoncal/agoncal-book-javaee7/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[tag=snippets]
+----
