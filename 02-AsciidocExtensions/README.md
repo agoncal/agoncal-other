@@ -1,23 +1,15 @@
-# Other - iText and DocusSign
+# Other - Asciidoctor Maven plugin and extensions
 
 ## Purpose of this sample
 
-The purpose of this sample is to show how to generate a PDF document with [iText 7](http://itextpdf.com/) and send it through [DocuSign](http://docusign.com).
+The purpose of this sample is to show how to execute AsciiDoctor extension with the Asciidoctor Maven plugin..
 
 [Read more on my blog](https://antoniogoncalves.org/2017/01/30/automating-administrative-tasks-with-itext-and-docusign/)
 
 ## Execute the sample
 
-The `Main` class uses the :
+Use the Maven goal `mvn clean generate-resources` and you will get the generated HTML page.
 
-* `PdfGenerator` : generates a PDF with iText
-* `PdfSender` : sends the PDF with DocuSign. For this to work you need a `src/main/resources/docusign.properties`containing the DocuSign user/pwd/integration key suchs as 
-
-```
-username=theDocusign.email@address.com
-password=theDocusignPassword
-integratorKey=some1-thing2-like3-that-e4294bffd2c4
-```
 
 <div class="footer">
     <span class="footerTitle"><span class="uc">a</span>ntonio <span class="uc">g</span>oncalves</span>
