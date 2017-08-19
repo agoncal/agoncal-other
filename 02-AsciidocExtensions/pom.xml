@@ -12,31 +12,53 @@
 
     <properties>
         <version.asciidoctor.maven.plugin>1.5.5</version.asciidoctor.maven.plugin>
-        <asciidoctorj.diagram.version>1.5.4.1</asciidoctorj.diagram.version>
+        <version.asciidoctorj.diagram>1.5.4.1</version.asciidoctorj.diagram>
+        <version.gem.maven.plugin>1.1.5</version.gem.maven.plugin>
+        <version.jruby>9.1.8.0</version.jruby>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>rubygems</groupId>
+            <artifactId>middleman</artifactId>
+            <version>4.2.1</version>
+            <type>gem</type>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
+            <!--<plugin>-->
+                <!--<groupId>de.saumya.mojo</groupId>-->
+                <!--<artifactId>gem-maven-plugin</artifactId>-->
+                <!--<version>${version.gem.maven.plugin}</version>-->
+                <!--<configuration>-->
+                    <!--<skip>true</skip>-->
+                    <!--<jrubyVersion>${version.jruby}</jrubyVersion>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>initialize</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>${version.asciidoctor.maven.plugin}</version>
                 <dependencies>
                     <dependency>
+                        <groupId>org.jruby</groupId>
+                        <artifactId>jruby-complete</artifactId>
+                        <version>${version.jruby}</version>
+                    </dependency>
+                    <dependency>
                         <groupId>org.asciidoctor</groupId>
                         <artifactId>asciidoctorj-diagram</artifactId>
-                        <version>${asciidoctorj.diagram.version}</version>
+                        <version>${version.asciidoctorj.diagram}</version>
                     </dependency>
-                    <!--<dependency>-->
-                        <!--<groupId>org.asciidoctor</groupId>-->
-                        <!--<artifactId>asciidoctorj</artifactId>-->
-                        <!--<version>${version.asciidoctorj}</version>-->
-                    <!--</dependency>-->
-                    <!--<dependency>-->
-                        <!--<groupId>org.jruby</groupId>-->
-                        <!--<artifactId>jruby-complete</artifactId>-->
-                        <!--<version>${version.jruby}</version>-->
-                    <!--</dependency>-->
                 </dependencies>
                 <configuration>
                     <attributes>
@@ -49,14 +71,13 @@
                     </attributes>
                     <requires>
                         <require>asciidoctor-diagram</require>
-                        <!--<require>/usr/local/lib/ruby/gems/2.4.0/gems/middleman-4.2.1/middleman</require>-->
                         <require>${project.basedir}/src/main/asciidoc-extensions/emoji-inline-macro.rb</require>
                         <require>${project.basedir}/src/main/asciidoc-extensions/gist-block-macro.rb</require>
                         <!--<require>${project.basedir}/src/main/asciidoc-extensions/lorem-block-macro.rb</require>-->
                         <require>${project.basedir}/src/main/asciidoc-extensions/shell-session-treeprocessor.rb</require>
                         <require>${project.basedir}/src/main/asciidoc-extensions/tree-block-macro.rb</require>
                     </requires>
-                    <!--<gemPath>/usr/local/lib/ruby/gems/2.4.0/gems/middleman-4.2.1</gemPath>-->
+                    <!--<gemPath>${project.build.directory}/rubygems</gemPath>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -74,4 +95,19 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>rubygems-proxy</id>
+            <name>Rubygems Proxy</name>
+            <url>http://rubygems-proxy.torquebox.org/releases</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>

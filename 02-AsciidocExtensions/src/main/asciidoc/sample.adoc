@@ -13,11 +13,8 @@ include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/c
 ----
 
 == Emoji Inline Extension (emoji-inline-macro.rb)
-// must pass allow-uri-read to enable data-uri behavior, see in the pom.xml attributes
 
-Faster than a emoji:turtle[1x]!
-
-This is an example of how you can emoji:heart[lg] Asciidoctor and Twitter Emoji.
+I trully emoji:heart[lg] my little green emoji:turtle[1x]!
 
 == Gist Block Extension (gist-block-macro.rb)
 
@@ -26,7 +23,7 @@ gist::mojavelinux/5546622[]
 
 == Lorem Extension (lorem-block-macro.rb)
 
-This requires middleman >= 4.0.0 (`gem install middleman`).
+This requires middleman >= 4.0.0
 
 lorem::sentences[5]
 
@@ -44,7 +41,7 @@ lorem::sentences[5]
 Here's what's in the directory:
 
 .Contents of the directory
-tree::{user-home}/Documents/Code/Agoncal/agoncal-other/02-AsciidocExtensions/[]
+tree::{user-home}/Documents/Code/Agoncal/agoncal-other/02-AsciidocExtensions/src/main[]
 
 == Dita Diagram
 
