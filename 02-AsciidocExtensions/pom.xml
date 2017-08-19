@@ -38,22 +38,14 @@
                         <!--<version>${version.jruby}</version>-->
                     <!--</dependency>-->
                 </dependencies>
-                <executions>
-                    <execution>
-                        <id>output-html</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <backend>html5</backend>
-                        </configuration>
-                    </execution>
-                </executions>
                 <configuration>
                     <attributes>
-                        <imagesdir>./images</imagesdir>
-                        <allow-uri-read>true</allow-uri-read>
+                        <!-- Uses the <img src="data:image/png;base64> syntax for diagrams -->
+                        <data-uri/>
+                        <!-- Allows access to remote files (eg. code on external GitHub) -->
+                        <allow-uri-read/>
+                        <!--<imagesdir>./images</imagesdir>-->
+                        <!--<allow-uri-read>true</allow-uri-read>-->
                     </attributes>
                     <requires>
                         <require>asciidoctor-diagram</require>
@@ -64,8 +56,20 @@
                         <require>${project.basedir}/src/main/asciidoc-extensions/shell-session-treeprocessor.rb</require>
                         <require>${project.basedir}/src/main/asciidoc-extensions/tree-block-macro.rb</require>
                     </requires>
-                    <gemPath>/usr/local/lib/ruby/gems/2.4.0/gems/middleman-4.2.1</gemPath>
+                    <!--<gemPath>/usr/local/lib/ruby/gems/2.4.0/gems/middleman-4.2.1</gemPath>-->
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-html-doc</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html5</backend>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

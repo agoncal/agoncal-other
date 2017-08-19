@@ -14,3 +14,6 @@ docusign.properties
 #System Files
 .DS_Store
 Thumbs.db
+
+.asciidoctor/
+images/

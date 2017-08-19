@@ -1,12 +1,19 @@
-= Asciidoctor Extensions
+= Configuring the AsciiDoctor Maven Plugin
 :doctype: book
+:imagesdir: images
 
 Plenty of extensions to play with at https://github.com/asciidoctor/asciidoctor-extensions-lab
 
+== Using include with a remote file
+// must pass allow-uri-read to enable data-uri behavior, see in the pom.xml attributes
+
+[source]
+----
+include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[tag=snippets]
+----
+
 == Emoji Inline Extension (emoji-inline-macro.rb)
 // must pass allow-uri-read to enable data-uri behavior, see in the pom.xml attributes
-:data-uri:
-:cache-uri:
 
 Faster than a emoji:turtle[1x]!
 
@@ -23,19 +30,20 @@ This requires middleman >= 4.0.0 (`gem install middleman`).
 
 lorem::sentences[5]
 
-= Shell Session Extension (shell-session-treeprocessor.rb)
+== Shell Session Extension (shell-session-treeprocessor.rb)
 
  $ echo 'Hello, World!'
  > Hello, World!
 
  $ gem install asciidoctor
 
-= Tree Block Macro Extension (tree-block-macro.rb)
+== Tree Block Macro Extension (tree-block-macro.rb)
+// Uses the Fontawesome icons
 :icons: font
 
 Here's what's in the directory:
 
-.Contents of lib folder in Asciidoctor gem
+.Contents of the directory
 tree::{user-home}/Documents/Code/Agoncal/agoncal-other/02-AsciidocExtensions/[]
 
 == Dita Diagram
