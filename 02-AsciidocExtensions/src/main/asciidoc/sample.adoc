@@ -1,10 +1,14 @@
-:allow-uri-read:
+:allow-uri-read: true
 
 == Here I am using the emoji-inline-macro extension
 
 Faster than a emoji:turtle[1x]!
 
 This is an example of how you can emoji:heart[lg] Asciidoctor and Twitter Emoji.
+
+== Embedding Asciidoc
+
+include::https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/README.adoc[]
 
 == Here I am using the uri-include-processor extension
 

@@ -53,9 +53,12 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <attributes>
+                        <allow-uri-read>true</allow-uri-read>
+                    </attributes>
                     <requires>
                         <require>${project.basedir}/src/main/asciidoc-extensions/emoji-inline-macro.rb</require>
-                        <require>${project.basedir}/src/main/asciidoc-extensions/uri-include-processor.rb</require>
+                        <!--<require>${project.basedir}/src/main/asciidoc-extensions/uri-include-processor.rb</require>-->
                     </requires>
                 </configuration>
             </plugin>
