@@ -1,41 +1,73 @@
-:allow-uri-read: true
+= Asciidoctor Extensions
+:doctype: book
 
-== Here I am using the emoji-inline-macro extension
+Plenty of extensions to play with at https://github.com/asciidoctor/asciidoctor-extensions-lab
+
+== Emoji Inline Extension (emoji-inline-macro.rb)
+// must pass allow-uri-read to enable data-uri behavior, see in the pom.xml attributes
+:data-uri:
+:cache-uri:
 
 Faster than a emoji:turtle[1x]!
 
 This is an example of how you can emoji:heart[lg] Asciidoctor and Twitter Emoji.
 
-== Embedding Asciidoc
+== Gist Block Extension (gist-block-macro.rb)
 
-include::https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/README.adoc[]
+.Guard setup to live preview AsciiDoc output
+gist::mojavelinux/5546622[]
 
-== Here I am using the uri-include-processor extension
+== Lorem Extension (lorem-block-macro.rb)
 
-[source]
-----
-include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[]
-----
+This requires middleman >= 4.0.0 (`gem install middleman`).
 
-== Here I am using the uri-include-processor extension with tags
+lorem::sentences[5]
 
-[source]
-----
-include::https://raw.githubusercontent.com/agoncal/agoncal-book-javaee7/master/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[tag=snippets]
-----
+= Shell Session Extension (shell-session-treeprocessor.rb)
+
+ $ echo 'Hello, World!'
+ > Hello, World!
+
+ $ gem install asciidoctor
+
+= Tree Block Macro Extension (tree-block-macro.rb)
+:icons: font
+
+Here's what's in the directory:
+
+.Contents of lib folder in Asciidoctor gem
+tree::{user-home}/Documents/Code/Agoncal/agoncal-other/02-AsciidocExtensions/[]
+
+== Dita Diagram
+
+[ditaa,asciidoctor-diagram-process]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        |---+ Asciidoctor +--->|               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
 
 
-== Here I am using include
+== PlantUML Diagram
 
-[source]
-----
-include::/Users/agoncal/Documents/Code/Agoncal/agoncal-book-javaee7/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[]
-----
+[plantuml,auth-protocol]
+....
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
 
-
-== Here I am using include with tags
-
-[source]
-----
-include::/Users/agoncal/Documents/Code/Agoncal/agoncal-book-javaee7/chapter03/chapter03-samples/src/main/java/org/agoncal/book/javaee7/chapter03/ex01/Book01.java[tag=snippets]
-----
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+....
