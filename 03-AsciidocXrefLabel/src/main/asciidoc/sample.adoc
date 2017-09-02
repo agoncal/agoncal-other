@@ -1,0 +1,17 @@
+== Configuring the AsciiDoctor Maven Plugin
+
+In <<my-listing1>> you can see a String, in <<my-listing2>> you can see an int.
+
+[[my-listing1, Listing 1]]
+.This is a String
+[source, java]
+----
+String s;
+----
+
+[[my-listing2, Listing 2]]
+.This is an int
+[source, java]
+----
+int i;
+----

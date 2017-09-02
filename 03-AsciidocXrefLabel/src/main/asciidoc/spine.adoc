@@ -1,0 +1,4 @@
+= XRef Label
+:doctype: book
+
+include::sample.adoc[]
