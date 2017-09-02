@@ -4,7 +4,7 @@
 
 The purpose of this sample is to show how to execute AsciiDoctor extension with the Asciidoctor Maven plugin..
 
-[Read more on my blog](https://antoniogoncalves.org/2017/01/30/automating-administrative-tasks-with-itext-and-docusign/)
+[Read more on my blog](https://antoniogoncalves.org/2017/08/22/configuring-the-asciidoctor-maven-plugin/)
 
 ## Execute the sample
 
