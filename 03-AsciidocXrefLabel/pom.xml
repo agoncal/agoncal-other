@@ -47,6 +47,12 @@
                     </dependency>
                 </dependencies>
 
+                <configuration>
+                    <attributes>
+                        <listing-caption>true</listing-caption>
+                    </attributes>
+                </configuration>
+
                 <executions>
                     <execution>
                         <id>output-epub</id>

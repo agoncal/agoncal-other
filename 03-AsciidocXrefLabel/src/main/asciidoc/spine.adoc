@@ -1,4 +1,5 @@
 = XRef Label
 :doctype: book
+:xrefstyle: short
 
 include::sample.adoc[]

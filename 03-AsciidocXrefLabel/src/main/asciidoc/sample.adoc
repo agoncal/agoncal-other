@@ -1,17 +1,64 @@
 == Configuring the AsciiDoctor Maven Plugin
 
+=== Listing
+
 In <<my-listing1>> you can see a String, in <<my-listing2>> you can see an int.
 
-[[my-listing1, Listing 1]]
+[[my-listing1]]
 .This is a String
 [source, java]
 ----
 String s;
 ----
 
-[[my-listing2, Listing 2]]
+[[my-listing2]]
 .This is an int
 [source, java]
 ----
 int i;
 ----
+
+=== Table
+
+In <<my-table1>> you can see a useless table, and in <<my-table2>> too.
+
+[[my-table1]]
+.This is a useless table
+[cols="35,65",options="header"]
+|===
+|Col1
+|Col2
+
+|`blah`
+|blah blah blah
+
+|`blah`
+|blah blah blah
+|===
+
+
+[[my-table2]]
+.This is a useless table
+[cols="50,50",options="header"]
+|===
+|Col1
+|Col2
+
+|`blah`
+|blah blah blah
+
+|`blah`
+|blah blah blah
+|===
+
+=== Figure
+
+In <<my-figure1>> you can see nothing nor in <<my-figure2>>.
+
+[[my-figure1]]
+.No more images please
+image::architecture.png[]
+
+[[my-figure2]]
+.Back is black
+image::architecture.png[]
