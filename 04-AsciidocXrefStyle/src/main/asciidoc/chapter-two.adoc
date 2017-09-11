@@ -1,4 +1,4 @@
-[#chapter-two]
+[chapter-two#chapter-two]
 = Second chapter with table
 
 == Table

@@ -1,10 +1,24 @@
 = XRef Style
 :doctype: book
-:sectnums:
+:listing-caption: Listing
+:xrefstyle: short
 
+// TOC
+:toc:
+:toclevels: 4
+:toc-title: Content
+
+:sectnums!:
+
+//:xrefstyle: short
 //:xrefstyle: full
+//:xrefstyle: basic
 
 include::introduction.adoc[leveloffset=+1]
+
+//:xrefstyle: short
+
+:sectnums:
 
 include::chapter-one.adoc[leveloffset=+1]
 
