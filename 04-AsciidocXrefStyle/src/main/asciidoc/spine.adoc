@@ -1,0 +1,11 @@
+= XRef Style
+:doctype: book
+:sectnums:
+
+//:xrefstyle: full
+
+include::introduction.adoc[leveloffset=+1]
+
+include::chapter-one.adoc[leveloffset=+1]
+
+include::chapter-two.adoc[leveloffset=+1]

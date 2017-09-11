@@ -14,6 +14,7 @@
         <module>01-PDFDocusign</module>
         <module>02-AsciidocExtensions</module>
         <module>03-AsciidocXrefLabel</module>
+        <module>04-AsciidocXrefStyle</module>
     </modules>
 
 </project>

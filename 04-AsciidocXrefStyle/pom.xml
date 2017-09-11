@@ -5,10 +5,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.agoncal.other</groupId>
-    <artifactId>asciidoc-xreflabel</artifactId>
+    <artifactId>asciidoc-xrefstyle</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>03 - Using Asciidoc Xreflabel</name>
+    <name>04 - Using Asciidoc XrefStyle</name>
 
     <properties>
         <version.asciidoctor.maven.plugin>1.5.5</version.asciidoctor.maven.plugin>

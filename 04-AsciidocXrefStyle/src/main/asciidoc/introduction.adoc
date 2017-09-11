@@ -1,0 +1,9 @@
+//:xrefstyle: full
+
+[#introduction]
+= Introduction
+
+Made of two chapters:
+
+* <<chapter-one>>
+* <<chapter-two>>
