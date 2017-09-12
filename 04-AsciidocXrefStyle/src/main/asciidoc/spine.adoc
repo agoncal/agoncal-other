@@ -1,7 +1,7 @@
-= XRef Style
+= XRef Between Chapters
 :doctype: book
-:listing-caption: Listing
-:chapter-refsig: Chapter
+//:listing-caption: Listing
+//:chapter-refsig: Chapter
 //:xrefstyle: short
 :sectnums:
 :toc:
