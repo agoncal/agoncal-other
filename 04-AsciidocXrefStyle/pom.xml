@@ -15,7 +15,7 @@
         <version.asciidoctorj>1.6.0-alpha.5</version.asciidoctorj>
         <version.asciidoctorj.pdf>1.5.0-alpha.16</version.asciidoctorj.pdf>
         <version.asciidoctorj.epub3>1.5.0-alpha.7</version.asciidoctorj.epub3>
-        <version.jruby>9.1.8.0</version.jruby>
+        <version.jruby>9.1.12.0</version.jruby>
     </properties>
 
     <build>
