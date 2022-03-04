@@ -1,13 +1,5 @@
 ### Shell script setting things up on Mac
 
-### Variables
-### #########
-
-export CODE_HOME=~/Documents/Code
-export TOOLS_HOME=~/Tools
-export SHELL_HOME=~/Shells
-export TEMP=~/Temp
-
 
 
 ### Homebrew
@@ -88,8 +80,16 @@ sdk install java 22.0.0.2.r17-grl
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## .zshrc
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' frequency 13
 plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode zsh-interactive-cd)
+
+# User configuration
+
+export CODE_HOME=~/Documents/Code
+export TOOLS_HOME=~/Tools
+export SHELL_HOME=~/Shells
+export TEMP=~/Temp
+
 ## .zshrc
