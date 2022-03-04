@@ -72,6 +72,8 @@ sdk install java 11.0.14-ms
 
 sdk install java 22.0.0.2.r17-grl
 
+sdk install jbang
+
 
 
 ### Oh My ZSH
@@ -87,9 +89,11 @@ plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath
 
 # User configuration
 
-export CODE_HOME=~/Documents/Code
-export TOOLS_HOME=~/Tools
-export SHELL_HOME=~/Shells
+export CODE=~/Documents/Code
+export TOOLS=~/Tools
+export SHELL=~/Shells
 export TEMP=~/Temp
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ## .zshrc
