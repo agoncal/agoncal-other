@@ -1,5 +1,11 @@
 ### Shell script setting things up on Mac
 
+export CODE_HOME=~/Documents/Code
+export TOOLS_HOME=~/Tools
+export SHELL_HOME=~/Shells
+export TEMP=~/Temp
+
+
 
 ### Homebrew
 ### ########
@@ -56,6 +62,7 @@ brew cask install BBedit
 brew cask install skim # PDF
 
 
+
 ### SDKMan
 ### ######
 curl -s "https://get.sdkman.io" | zsh
@@ -71,8 +78,11 @@ sdk install java 11.0.14-ms
 sdk install java 22.0.0.2.r17-grl
 
 
+
 ### Oh My ZSH
 ### #########
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## .zshrc
 ZSH_THEME="robbyrussell"
