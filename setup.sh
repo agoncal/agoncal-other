@@ -89,11 +89,13 @@ plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath
 
 # User configuration
 
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 export CODE=~/Documents/Code
 export TOOLS=~/Tools
 export SHELL=~/Shells
 export TEMP=~/Temp
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export GRAALVM_HOME=${SDKMAN_DIR}/candidates/java/22.0.0.2.r17-grl
 
 ## .zshrc
