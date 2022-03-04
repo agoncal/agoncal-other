@@ -53,3 +53,28 @@ brew cask install adobe-reader
 brew cask install BBedit
 brew cask install skim # PDF
 
+
+### SDKMan
+
+curl -s "https://get.sdkman.io" | zsh
+
+# Java
+sdk install java 17.0.2-tem
+sdk install java 11.0.14-tem
+sdk install java 8.0.322-tem
+
+sdk install java 17.0.2-ms
+sdk install java 11.0.14-ms
+
+sdk install java 22.0.0.2.r17-grl
+
+
+### Oh My ZSH
+
+## .zshrc
+ZSH_THEME="robbyrussell"
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' frequency 13
+plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode zsh-interactive-cd)
+
+## .zshrc
