@@ -1,6 +1,8 @@
 ### Shell script setting things up on Mac
 
+
 ### Homebrew
+### ########
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Tools
@@ -55,7 +57,7 @@ brew cask install skim # PDF
 
 
 ### SDKMan
-
+### ######
 curl -s "https://get.sdkman.io" | zsh
 
 # Java
@@ -70,11 +72,11 @@ sdk install java 22.0.0.2.r17-grl
 
 
 ### Oh My ZSH
+### #########
 
 ## .zshrc
 ZSH_THEME="robbyrussell"
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' frequency 13
 plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode zsh-interactive-cd)
-
 ## .zshrc
