@@ -1,5 +1,8 @@
 ### Shell script setting things up on Mac
 
+### Variables
+### #########
+
 export CODE_HOME=~/Documents/Code
 export TOOLS_HOME=~/Tools
 export SHELL_HOME=~/Shells
