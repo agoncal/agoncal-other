@@ -83,7 +83,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ZSH_THEME="af-magic"
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' frequency 13
-plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode zsh-interactive-cd)
+plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode)
 
 # User configuration
 
