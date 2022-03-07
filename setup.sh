@@ -81,8 +81,11 @@ sdk install jbang
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-## .zshrc
-ZSH_THEME="af-magic"
+# powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# .zshrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' frequency 13
 plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode)
