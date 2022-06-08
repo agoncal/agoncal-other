@@ -71,6 +71,7 @@ brew cask install xtrafinder
 #Instant Messengers
 brew cask install skype
 brew cask install slack
+brew install --cask whatsapp
 
 # Media players
 brew cask install vlc
