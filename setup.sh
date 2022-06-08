@@ -113,7 +113,7 @@ sdk install java 11.0.14-tem
 sdk install java 8.0.322-tem
 
 sdk install java 17.0.2-ms
-sdk install java 11.0.14-ms
+sdk install java 11.0.15-ms
 
 sdk install java 22.0.0.2.r17-grl
 
