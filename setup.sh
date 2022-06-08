@@ -79,7 +79,7 @@ brew cask install vlc
 # Readers
 brew cask install kindle
 brew cask install adobe-reader
-brew cask install BBedit
+brew install --cask BBedit
 brew install skim 
 
 
