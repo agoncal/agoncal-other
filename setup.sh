@@ -50,8 +50,9 @@ brew install iterm2
 brew install intellij-idea
 
 # Browsers
-brew install firefox
-brew install google-chrome
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask microsoft-edge
 
 # Cloud drives
 brew install dropbox
