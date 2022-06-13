@@ -119,3 +119,5 @@ sdk install java 11.0.15-ms
 sdk install java 22.0.0.2.r17-grl
 
 sdk install jbang
+
+sdk install quarkus
