@@ -48,6 +48,7 @@ brew install watch
 brew cask install araxis-merge
 brew install iterm2
 brew install intellij-idea
+brew install --cask visual-studio-code
 
 # Browsers
 brew install --cask firefox
