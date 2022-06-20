@@ -122,3 +122,10 @@ sdk install java 22.0.0.2.r17-grl
 sdk install jbang
 
 sdk install quarkus
+
+### Mac OS
+### ######
+
+# Finder
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
