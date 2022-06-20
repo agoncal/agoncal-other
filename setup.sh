@@ -45,7 +45,7 @@ brew install tree
 brew install watch
 
 # UI
-brew cask install araxis-merge
+brew install --cask araxis-merge
 brew install iterm2
 brew install intellij-idea
 brew install --cask visual-studio-code
