@@ -44,6 +44,9 @@ brew install wget
 brew install tree
 brew install watch
 
+# Azure
+brew install azure-cli
+
 # UI
 brew install --cask araxis-merge
 brew install iterm2
