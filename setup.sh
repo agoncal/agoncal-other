@@ -53,7 +53,8 @@ brew install --cask araxis-merge
 brew install iterm2
 brew install intellij-idea
 brew install --cask visual-studio-code
-
+brew install --cask plural
+sight
 # Browsers
 brew install --cask firefox
 brew install --cask google-chrome
