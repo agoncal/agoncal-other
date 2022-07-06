@@ -34,6 +34,7 @@ plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath
 # Tools
 brew install ant
 brew install gh
+brew install graphviz
 brew install httpie
 brew install httping
 brew install htop
