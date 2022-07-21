@@ -26,6 +26,13 @@ zstyle ':omz:update' frequency 13
 plugins=(git macos autojump colored-man-pages copyfile docker httpie oc copypath docker history kubectl man mvn node sdk terraform vscode)
 
 
+### Git
+### ###
+git config --global --add user.name "Antonio Goncalves"
+git config --global --add user.email "antonio.goncalves@gmail.com"
+git config --global --add --bool push.autoSetupRemote true
+git config --global --add alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+
 
 ### Homebrew
 ### ########
