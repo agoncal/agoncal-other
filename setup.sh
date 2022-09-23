@@ -59,8 +59,8 @@ brew install azure-cli
 
 # UI
 brew install --cask araxis-merge
-brew install iterm2
-brew install intellij-idea
+brew install --cask iterm2
+brew install --cask intellij-idea
 brew install --cask visual-studio-code
 brew install --cask plural
 sight
@@ -70,7 +70,7 @@ brew install --cask google-chrome
 brew install --cask microsoft-edge
 
 # Cloud drives
-brew install dropbox
+brew install --cask dropbox
 brew install --cask onedrive
 
 # Cloud, containers
