@@ -32,6 +32,7 @@ git config --global --add user.name "Antonio Goncalves"
 git config --global --add user.email "antonio.goncalves@gmail.com"
 git config --global --add --bool push.autoSetupRemote true
 git config --global --add alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+git config --global push.autoSetupRemote true
 
 
 ### Homebrew
