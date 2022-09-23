@@ -78,25 +78,25 @@ brew install kubectl
 brew cask install minishift
 
 # Office stuff
-brew cask install daisydisk
-brew cask install libreoffice
-brew install sizeup
-brew cask install xmind
-brew cask install xtrafinder
+brew install --cask daisydisk
+brew install --cask libreoffice
+brew install --cask sizeup
+brew install --cask xmind
+brew install --cask xtrafinder
 
 #Instant Messengers
-brew cask install skype
-brew cask install slack
+brew install --cask skype
+brew install --cask slack
 brew install --cask whatsapp
 
 # Media players
-brew cask install vlc
+brew install --cask vlc
 
 # Readers
-brew cask install kindle
-brew cask install adobe-reader
+brew install --cask kindle
+brew install --cask adobe-reader
 brew install --cask BBedit
-brew install skim 
+brew install --cask skim 
 
 
 
