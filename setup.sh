@@ -58,12 +58,12 @@ brew install watch
 brew install azure-cli
 
 # UI
+brew install --cask docker
 brew install --cask araxis-merge
 brew install --cask iterm2
 brew install --cask intellij-idea
 brew install --cask visual-studio-code
-brew install --cask plural
-sight
+brew install --cask pluralsight
 # Browsers
 brew install --cask firefox
 brew install --cask google-chrome
