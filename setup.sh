@@ -64,6 +64,7 @@ brew install --cask iterm2
 brew install --cask intellij-idea
 brew install --cask visual-studio-code
 brew install --cask pluralsight
+brew install --cask postman
 # Browsers
 brew install --cask firefox
 brew install --cask google-chrome
