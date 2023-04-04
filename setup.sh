@@ -144,3 +144,6 @@ sdk install quarkus
 # Finder
 defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
+
+# Stop Spaces Rearranging in Mac OS X
+System Preferences - Desktop & Dock - Mission Control - Automatically rearrange spaces based on most recent use
