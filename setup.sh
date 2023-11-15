@@ -88,6 +88,7 @@ brew install --cask xtrafinder
 #Instant Messengers
 brew install --cask skype
 brew install --cask slack
+brew install --cask discord
 brew install --cask whatsapp
 
 # Media players
